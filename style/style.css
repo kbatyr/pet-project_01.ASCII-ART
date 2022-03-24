@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+section, header, footer {
+    padding: 0 15px;
+    text-align: center;
+    color: whitesmoke;
+    font-family:'Bebas Neue', cursive;
+    font-size: 25px;
+  }
+  
+  @media (min-width: 575.98px){
+    section, header, footer {
+      padding: 0 calc(50vw - 270px);
+    }
+  }
+  
+  @media (min-width: 767.98px){
+    section, header, footer {
+      padding: 0 calc(50vw - 360px);
+    }
+  }
+  
+  @media (min-width: 991.98px) {
+    section, header, footer {
+      padding: 0 calc(50vw - 480px);
+    }
+  }
+  
+  @media (min-width: 1199.98px){
+    section, header, footer {
+      padding: 0 calc(50vw - 590px);
+    }
+  }
+  body {
+    background-color: rgb(40, 40, 51);
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+  h1:hover {
+      color: rgb(221, 102, 47)
+  }
+  select{
+    height: 30px;
+    width: 95px;
+    font-size: 16px;
+    font-family:'Bebas Neue', cursive;
+    text-align: center;
+    padding: 5px 6px;
+    }
+    ::placeholder {
+    font-family:'Bebas Neue', cursive;
+    }   
+  textarea {
+      width: 300px;
+      height: 120px;
+      border-radius:5px;
+      resize:none
+  }
+  textarea:hover {
+      border-color: rgb(221, 102, 47);
+      border-style: solid;
+  }
+  input {
+    width:100px;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    border: none;
+    font-weight: bold;
+    font-family:'Bebas Neue', cursive;
+    font-size: 20px;
+  }
+  input:hover {
+    background-color: rgb(221, 102, 47)
+}
+  .alem {
+    color:rgb(221, 102, 47);
+    text-decoration: none;
+  }
+  .index {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  pre {
+    color: rgb(221, 102, 47);
+    text-align: center;
+	 overflow: scroll;
+  }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ASCII-ART WEB</title>
+	<link rel="stylesheet" href="../style/style.css">
+	<link rel="icon" href="https://img.icons8.com/office/16/000000/home--v2.png" type="image/x-icon">
+</head>
+
+<body>
+	<section class="main-section">
+		<a class="index" href="/">
+			<h1>ASCII-ART WEB</h1>
+		</a>
+		<form method="POST" action="/ascii-art">
+			<p><label for="select">Select a font:</label>
+				<select name="font">
+					<option value="standard.txt" {{if .STfs}} selected {{end}}>standard</option>
+					<option value="shadow.txt" {{if .SHfs}} selected {{end}}>shadow</option>
+					<option value="thinkertoy.txt" {{if .THfs}} selected {{end}}>thinkertoy</option>
+				</select>
+			</p>
+			<p><textarea name="text" placeholder="Type something..." maxlength="200" width=700px required></textarea></p>
+			<input name="button" type="submit" value="Convert" id="btnSubmit">
+			<input name="button" type="submit" value="Download" id="btnSubmit">
+		</form>
+	</section>
+	<pre name="output">{{.Art}}</pre>
+	<footer>
+		<p> Designed by kbatyr in <a class="alem" href="https://01.alem.school" target="_blank">@alem</a>
+			school.</p>
+	</footer>
+</body>
+
+</html>
