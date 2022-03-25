@@ -6,4 +6,4 @@ Ascii-art is a program which consists in receiving a string as an argument and o
 
 ### Usage
 
-go run .
+```go run .```
